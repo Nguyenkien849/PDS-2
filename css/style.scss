@@ -1,0 +1,166 @@
+$backgrondColor: #f7f8f9;
+
+
+
+
+
+.header {
+    margin-top: 50px;
+    .brand {
+        text-align: center;
+    }
+   .name {
+       text-transform: uppercase;
+       margin-top: 20px;
+       h4 {
+           font-weight: bold;
+       }
+   }
+   .phone {
+       margin-top: 25px;
+       text-align: center;
+   }
+}
+
+.menu {
+    background-color: $backgrondColor;
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+    li { 
+        position: relative;
+        &:hover {
+            .sub-menu {
+                display: block;
+            }
+        }
+
+        .sub-menu {
+            background-color: white;
+            width: 252px;
+            display: none;
+            padding: 0px;
+            list-style-type: none;
+            position: absolute;
+                .a1 {
+                    height: 100px;
+                    width: 200;
+                    display: block;
+                }
+                a {
+                    height: 50px;
+                    line-height: 50px;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
+       
+        a {
+            padding: 0px;
+            &:hover {
+                background-color: blue;
+                color: white;
+            }
+        }
+        
+    }
+
+.service {
+    text-align: center;
+    margin-top: 50px;
+}
+.product {
+    background-color: $backgrondColor;
+    .productt {
+        text-align: center;
+    }
+}
+.menu-2 {
+    text-decoration: none;
+    list-style-type:none;
+
+    .special-1 {
+        height: 50px;
+        background-color: blue;
+        text-align:center;
+        p {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .special-2 {
+        height: 100px;
+        position: relative;
+        a {
+            color: red;
+            display: block;
+            padding-left: 20px;
+            &:hover {
+                color: white;
+                background-color: blue;
+                position: absolute;
+            }
+        }
+    }
+    li {
+        border: 1px solid #000;
+        height: 50px;
+        line-height: 50px;
+        a {
+            text-decoration: none;
+            color: red;
+            display: block;
+            padding-left: 20px;
+            &:hover {
+                background-color: blue;
+                color:white;
+            }
+        }
+    }
+}
+.partner {
+    background-color: #3f3f3f;
+    text-align: center;
+    h5 {
+        color: white;
+    }
+}
+.footer {
+    border-top: 2px solid white;
+    background-color: #252525;
+    .menu-3 {
+        border-bottom: 1px solid white;
+        a {
+            color: white;
+            &:hover {
+                color: white;
+                background-color: blue;
+            }
+        }
+    }
+    .brandd {
+        img {
+            float: right;
+        }
+    }
+    .infor {
+        float: left;
+        h6{
+            color: white;
+            width: 350px;;
+        }
+        p {
+            color: white;
+        }
+    }
+}
+.form {
+    .submit {
+        width: 60px;
+        height: 30px;
+        padding: 0px;
+        border-radius: 15px;
+    }
+}

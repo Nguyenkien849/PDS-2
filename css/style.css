@@ -1,0 +1,184 @@
+.header {
+  margin-top: 50px;
+}
+
+.header .brand {
+  text-align: center;
+}
+
+.header .name {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.header .name h4 {
+  font-weight: bold;
+}
+
+.header .phone {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.menu {
+  background-color: #f7f8f9;
+  margin-top: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+.menu li .sub-menu {
+  background-color: white;
+  width: 252px;
+  display: none;
+  padding: 0px;
+  list-style-type: none;
+  position: absolute;
+}
+
+.menu li .sub-menu .a1 {
+  height: 100px;
+  width: 200;
+  display: block;
+}
+
+.menu li .sub-menu a {
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a {
+  padding: 0px;
+}
+
+.menu a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.service {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product {
+  background-color: #f7f8f9;
+}
+
+.product .productt {
+  text-align: center;
+}
+
+.menu-2 {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu-2 .special-1 {
+  height: 50px;
+  background-color: blue;
+  text-align: center;
+}
+
+.menu-2 .special-1 p {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-2 .special-2 {
+  height: 100px;
+  position: relative;
+}
+
+.menu-2 .special-2 a {
+  color: red;
+  display: block;
+  padding-left: 20px;
+}
+
+.menu-2 .special-2 a:hover {
+  color: white;
+  background-color: blue;
+  position: absolute;
+}
+
+.menu-2 li {
+  border: 1px solid #000;
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu-2 li a {
+  text-decoration: none;
+  color: red;
+  display: block;
+  padding-left: 20px;
+}
+
+.menu-2 li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.partner {
+  background-color: #3f3f3f;
+  text-align: center;
+}
+
+.partner h5 {
+  color: white;
+}
+
+.footer {
+  border-top: 2px solid white;
+  background-color: #252525;
+}
+
+.footer .menu-3 {
+  border-bottom: 1px solid white;
+}
+
+.footer .menu-3 a {
+  color: white;
+}
+
+.footer .menu-3 a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.footer .brandd img {
+  float: right;
+}
+
+.footer .infor {
+  float: left;
+}
+
+.footer .infor h6 {
+  color: white;
+  width: 350px;
+}
+
+.footer .infor p {
+  color: white;
+}
+
+.form .submit {
+  width: 60px;
+  height: 30px;
+  padding: 0px;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
