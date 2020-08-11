@@ -1,9 +1,149 @@
 $backgrondColor: #f7f8f9;
+@mixin colorvsfontsize ($color, $fonSize) {
+    color: $color;
+    font-size: $fonSize ;
+}
 
 
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+    .mobile {
+        display: none;
+    }
 
+    .desktop {
+        display: block;
+    }
+}
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .product-mobile {
+        margin-left: 90px;
+    }
+    .new-mobile {
+        padding:0px !important;
+    }
+    .new-mobile-1 {
+        padding-right: 0px !important;
+        padding-left: 30px !important;
+        
+    }
+    .desktop {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        .slogan-mobile {
+            text-align: center;
+            h1 {
+                @include colorvsfontsize(black,30px )
+            }
+        }
+        .menu-mobile {
+            .menu-mobile-1 {
+                li {
+                    list-style-type: none;
+                    position: relative;
+                    &:hover {
+                        .sub-menu-mobile {
+                            display: block;
+                        }
+                    }
+                    a {
+                        color: black !important ;
+                    }
+                    .sub-menu-mobile {
+                        display: none;
+                        position: absolute;
+                        padding: 0px;
+                        width: 130px;
+                        a {
+                            color: #354680 !important;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .desktop {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile {
+        .slogan-mobile {
+            text-align: center;
+            h1 {
+                @include  colorvsfontsize(black, 20px );
+            }
+        }
+        .menu-mobile {
+            .menu-mobile-1 {
+                li {
+                    list-style-type: none;
+                    &:hover{
+                        .sub-menu-mobile{
+                            display: block;
+                        }
+                    }
+                    .sub-menu-mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 250px) and (max-width: 480px) {
+    .desktop, .menu {
+        display: none;
+    }
+    .mobile {
+        .slogan-mobile {
+            text-align: center;
+            h1 {
+                @include  colorvsfontsize(black, 18px );
+            }
+        }
+        .menu-mobile {
+            .menu-mobile-1 {
+                li {
+                    list-style-type: none;
+                    &:hover{
+                        .sub-menu-mobile{
+                            display: block;
+                        }
+                    }
+                    .sub-menu-mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 992px) {
+    .menu-2 {
+        .special-2 {
+            height: 50px !important;
+        }
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 768px)  {
+    .news-mobile {
+        text-align: center;
+    }
+}
 .header {
     margin-top: 50px;
     .brand {
@@ -75,16 +215,23 @@ $backgrondColor: #f7f8f9;
     .productt {
         text-align: center;
     }
+    .product-row-2 {
+        text-align: center;
+    }
+    .product-row-3 {
+        @extend .product-row-2;
+    }
 }
 .menu-2 {
     text-decoration: none;
     list-style-type:none;
+    padding-left: 0px;
 
     .special-1 {
         height: 50px;
         background-color: blue;
         text-align:center;
-        p {
+        a {
             text-transform: uppercase;
             color: white;
             font-weight: bold;
@@ -92,7 +239,6 @@ $backgrondColor: #f7f8f9;
     }
     .special-2 {
         height: 100px;
-        position: relative;
         a {
             color: red;
             display: block;
@@ -100,7 +246,6 @@ $backgrondColor: #f7f8f9;
             &:hover {
                 color: white;
                 background-color: blue;
-                position: absolute;
             }
         }
     }
@@ -141,12 +286,10 @@ $backgrondColor: #f7f8f9;
         }
     }
     .brandd {
-        img {
-            float: right;
-        }
+        margin-right: 10px;
     }
     .infor {
-        float: left;
+        margin-left: 10px;
         h6{
             color: white;
             width: 350px;;
