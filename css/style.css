@@ -1,3 +1,122 @@
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .product-mobile {
+    margin-left: 90px;
+  }
+  .new-mobile {
+    padding: 0px !important;
+  }
+  .new-mobile-1 {
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+  }
+  .desktop {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+  }
+  .mobile .slogan-mobile h1 {
+    color: black;
+    font-size: 30px;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+    position: relative;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li a {
+    color: black !important;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    width: 130px;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a {
+    color: #354680 !important;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a:hover {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+  }
+  .mobile .slogan-mobile h1 {
+    color: black;
+    font-size: 20px;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 480px) {
+  .desktop, .menu {
+    display: none;
+  }
+  .mobile .slogan-mobile {
+    text-align: center;
+  }
+  .mobile .slogan-mobile h1 {
+    color: black;
+    font-size: 18px;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 992px) {
+  .menu-2 .special-2 {
+    height: 50px !important;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .news-mobile {
+    text-align: center;
+  }
+}
+
 .header {
   margin-top: 50px;
 }
@@ -79,9 +198,14 @@
   text-align: center;
 }
 
+.product .product-row-2, .product .product-row-3 {
+  text-align: center;
+}
+
 .menu-2 {
   text-decoration: none;
   list-style-type: none;
+  padding-left: 0px;
 }
 
 .menu-2 .special-1 {
@@ -90,7 +214,7 @@
   text-align: center;
 }
 
-.menu-2 .special-1 p {
+.menu-2 .special-1 a {
   text-transform: uppercase;
   color: white;
   font-weight: bold;
@@ -98,7 +222,6 @@
 
 .menu-2 .special-2 {
   height: 100px;
-  position: relative;
 }
 
 .menu-2 .special-2 a {
@@ -110,7 +233,6 @@
 .menu-2 .special-2 a:hover {
   color: white;
   background-color: blue;
-  position: absolute;
 }
 
 .menu-2 li {
@@ -158,12 +280,12 @@
   background-color: blue;
 }
 
-.footer .brandd img {
-  float: right;
+.footer .brandd {
+  margin-right: 10px;
 }
 
 .footer .infor {
-  float: left;
+  margin-left: 10px;
 }
 
 .footer .infor h6 {
