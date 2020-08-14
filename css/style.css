@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 @media screen and (min-width: 250px) and (max-width: 992px) {
   .banner {
     margin-top: 150px;
   }
 }
 
+=======
+>>>>>>> development
 @media screen and (min-width: 992px) and (max-width: 1500px) {
   .mobile {
     display: none;
@@ -40,6 +43,31 @@
     color: black;
     font-size: 30px;
   }
+<<<<<<< HEAD
+=======
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+    position: relative;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li a {
+    color: black !important;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    width: 130px;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a {
+    color: #354680 !important;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a:hover {
+    text-decoration: none;
+  }
+>>>>>>> development
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -56,6 +84,18 @@
     color: black;
     font-size: 20px;
   }
+<<<<<<< HEAD
+=======
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+  }
+>>>>>>> development
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
@@ -69,6 +109,18 @@
     color: black;
     font-size: 18px;
   }
+<<<<<<< HEAD
+=======
+  .mobile .menu-mobile .menu-mobile-1 li {
+    list-style-type: none;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
+    display: block;
+  }
+  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
+    display: none;
+  }
+>>>>>>> development
 }
 
 @media screen and (min-width: 350px) and (max-width: 992px) {
