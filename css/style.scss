@@ -3,8 +3,17 @@ $backgrondColor: #f7f8f9;
     color: $color;
     font-size: $fonSize ;
 }
+<<<<<<< HEAD
+
+@media screen and (min-width: 250px) and (max-width:992px) {
+    .banner {
+        margin-top: 150px;
+    }
+}
+=======
 
 
+>>>>>>> development
 @media screen and (min-width: 992px) and (max-width: 1500px) {
     .mobile {
         display: none;
@@ -41,6 +50,8 @@ $backgrondColor: #f7f8f9;
                 @include colorvsfontsize(black,30px )
             }
         }
+<<<<<<< HEAD
+=======
         .menu-mobile {
             .menu-mobile-1 {
                 li {
@@ -69,6 +80,7 @@ $backgrondColor: #f7f8f9;
                 }
             }
         }
+>>>>>>> development
     }
 }
 
@@ -86,6 +98,8 @@ $backgrondColor: #f7f8f9;
                 @include  colorvsfontsize(black, 20px );
             }
         }
+<<<<<<< HEAD
+=======
         .menu-mobile {
             .menu-mobile-1 {
                 li {
@@ -101,6 +115,7 @@ $backgrondColor: #f7f8f9;
                 }
             }
         }
+>>>>>>> development
     }
 
 }
@@ -115,6 +130,8 @@ $backgrondColor: #f7f8f9;
                 @include  colorvsfontsize(black, 18px );
             }
         }
+<<<<<<< HEAD
+=======
         .menu-mobile {
             .menu-mobile-1 {
                 li {
@@ -130,6 +147,7 @@ $backgrondColor: #f7f8f9;
                 }
             }
         }
+>>>>>>> development
     }
 }
 @media screen and (min-width: 350px) and (max-width: 992px) {
@@ -172,6 +190,7 @@ $backgrondColor: #f7f8f9;
         &:hover {
             .sub-menu {
                 display: block;
+                text-align: left;
             }
         }
 
@@ -186,8 +205,10 @@ $backgrondColor: #f7f8f9;
                     height: 100px;
                     width: 200;
                     display: block;
+                    padding-left: 20px;
                 }
                 a {
+                    padding-left: 20px;
                     height: 50px;
                     line-height: 50px;
                     text-decoration: none;
