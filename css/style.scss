@@ -3,17 +3,12 @@ $backgrondColor: #f7f8f9;
     color: $color;
     font-size: $fonSize ;
 }
-<<<<<<< HEAD
 
 @media screen and (min-width: 250px) and (max-width:992px) {
     .banner {
         margin-top: 150px;
     }
 }
-=======
-
-
->>>>>>> development
 @media screen and (min-width: 992px) and (max-width: 1500px) {
     .mobile {
         display: none;
@@ -50,37 +45,6 @@ $backgrondColor: #f7f8f9;
                 @include colorvsfontsize(black,30px )
             }
         }
-<<<<<<< HEAD
-=======
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    position: relative;
-                    &:hover {
-                        .sub-menu-mobile {
-                            display: block;
-                        }
-                    }
-                    a {
-                        color: black !important ;
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                        position: absolute;
-                        padding: 0px;
-                        width: 130px;
-                        a {
-                            color: #354680 !important;
-                            &:hover {
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
->>>>>>> development
     }
 }
 
@@ -98,24 +62,6 @@ $backgrondColor: #f7f8f9;
                 @include  colorvsfontsize(black, 20px );
             }
         }
-<<<<<<< HEAD
-=======
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    &:hover{
-                        .sub-menu-mobile{
-                            display: block;
-                        }
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                    }
-                }
-            }
-        }
->>>>>>> development
     }
 
 }
@@ -130,24 +76,6 @@ $backgrondColor: #f7f8f9;
                 @include  colorvsfontsize(black, 18px );
             }
         }
-<<<<<<< HEAD
-=======
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    &:hover{
-                        .sub-menu-mobile{
-                            display: block;
-                        }
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                    }
-                }
-            }
-        }
->>>>>>> development
     }
 }
 @media screen and (min-width: 350px) and (max-width: 992px) {
