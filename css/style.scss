@@ -4,7 +4,11 @@ $backgrondColor: #f7f8f9;
     font-size: $fonSize ;
 }
 
-
+@media screen and (min-width: 250px) and (max-width:992px) {
+    .banner {
+        margin-top: 150px;
+    }
+}
 @media screen and (min-width: 992px) and (max-width: 1500px) {
     .mobile {
         display: none;
@@ -41,34 +45,6 @@ $backgrondColor: #f7f8f9;
                 @include colorvsfontsize(black,30px )
             }
         }
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    position: relative;
-                    &:hover {
-                        .sub-menu-mobile {
-                            display: block;
-                        }
-                    }
-                    a {
-                        color: black !important ;
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                        position: absolute;
-                        padding: 0px;
-                        width: 130px;
-                        a {
-                            color: #354680 !important;
-                            &:hover {
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -86,21 +62,6 @@ $backgrondColor: #f7f8f9;
                 @include  colorvsfontsize(black, 20px );
             }
         }
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    &:hover{
-                        .sub-menu-mobile{
-                            display: block;
-                        }
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 
 }
@@ -113,21 +74,6 @@ $backgrondColor: #f7f8f9;
             text-align: center;
             h1 {
                 @include  colorvsfontsize(black, 18px );
-            }
-        }
-        .menu-mobile {
-            .menu-mobile-1 {
-                li {
-                    list-style-type: none;
-                    &:hover{
-                        .sub-menu-mobile{
-                            display: block;
-                        }
-                    }
-                    .sub-menu-mobile {
-                        display: none;
-                    }
-                }
             }
         }
     }
@@ -172,6 +118,7 @@ $backgrondColor: #f7f8f9;
         &:hover {
             .sub-menu {
                 display: block;
+                text-align: left;
             }
         }
 
@@ -186,8 +133,10 @@ $backgrondColor: #f7f8f9;
                     height: 100px;
                     width: 200;
                     display: block;
+                    padding-left: 20px;
                 }
                 a {
+                    padding-left: 20px;
                     height: 50px;
                     line-height: 50px;
                     text-decoration: none;

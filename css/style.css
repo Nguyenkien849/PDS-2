@@ -1,3 +1,9 @@
+@media screen and (min-width: 250px) and (max-width: 992px) {
+  .banner {
+    margin-top: 150px;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1500px) {
   .mobile {
     display: none;
@@ -34,28 +40,6 @@
     color: black;
     font-size: 30px;
   }
-  .mobile .menu-mobile .menu-mobile-1 li {
-    list-style-type: none;
-    position: relative;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
-    display: block;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li a {
-    color: black !important;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
-    display: none;
-    position: absolute;
-    padding: 0px;
-    width: 130px;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a {
-    color: #354680 !important;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile a:hover {
-    text-decoration: none;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -72,15 +56,6 @@
     color: black;
     font-size: 20px;
   }
-  .mobile .menu-mobile .menu-mobile-1 li {
-    list-style-type: none;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
-    display: block;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
@@ -93,15 +68,6 @@
   .mobile .slogan-mobile h1 {
     color: black;
     font-size: 18px;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li {
-    list-style-type: none;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li:hover .sub-menu-mobile {
-    display: block;
-  }
-  .mobile .menu-mobile .menu-mobile-1 li .sub-menu-mobile {
-    display: none;
   }
 }
 
@@ -152,6 +118,7 @@
 
 .menu li:hover .sub-menu {
   display: block;
+  text-align: left;
 }
 
 .menu li .sub-menu {
@@ -167,9 +134,11 @@
   height: 100px;
   width: 200;
   display: block;
+  padding-left: 20px;
 }
 
 .menu li .sub-menu a {
+  padding-left: 20px;
   height: 50px;
   line-height: 50px;
   text-decoration: none;
