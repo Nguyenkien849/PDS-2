@@ -1,15 +1,30 @@
-@media screen and (min-width: 250px) and (max-width: 992px) {
-  .banner {
-    margin-top: 150px;
+@media screen and (max-width: 578px) {
+  .partner-mobile {
+    display: block;
+  }
+  .partner {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 578px) and (max-width: 1500px) {
+  .partner-mobile {
+    display: none;
+  }
+  .partner {
+    display: block;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1500px) {
-  .mobile {
-    display: none;
-  }
   .desktop {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 1500px) {
+  .mobile {
+    display: none;
   }
 }
 
@@ -24,50 +39,27 @@
     padding-right: 0px !important;
     padding-left: 30px !important;
   }
-  .desktop {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-  .mobile .slogan-mobile {
-    text-align: center;
-  }
-  .mobile .slogan-mobile h1 {
-    color: black;
-    font-size: 30px;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .menu-mobile {
+    width: 420px !important;
+    height: 320px;
+  }
+  .menu-mobile ul li {
+    padding: 10px;
+  }
   .desktop {
     display: none;
   }
   .menu {
     display: none;
-  }
-  .mobile .slogan-mobile {
-    text-align: center;
-  }
-  .mobile .slogan-mobile h1 {
-    color: black;
-    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
   .desktop, .menu {
     display: none;
-  }
-  .mobile .slogan-mobile {
-    text-align: center;
-  }
-  .mobile .slogan-mobile h1 {
-    color: black;
-    font-size: 18px;
   }
 }
 
@@ -78,9 +70,94 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 768px) {
+  .search-box {
+    display: none;
+  }
   .news-mobile {
     text-align: center;
   }
+}
+
+.logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-menu a i {
+  height: 110px;
+  line-height: 110px;
+  color: black;
+}
+
+.search-box {
+  background-color: #f39c12;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.search-box input {
+  border: 3px solid #27ae60;
+  height: 50px;
+  width: 300px;
+  padding: 0px 10px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-box .btn-search {
+  position: absolute;
+  right: 39%;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid #d35400;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.search-box .btn-search i {
+  color: #d35400;
+}
+
+.menu-mobile {
+  position: absolute;
+  width: 300px;
+  left: 0;
+  top: 0;
+  background-color: #d35400;
+}
+
+.menu-mobile ul {
+  padding-left: 20px;
+  margin: 8px 0px;
+}
+
+.menu-mobile ul li {
+  list-style-type: none;
+}
+
+.menu-mobile ul li a {
+  color: #e6e6e6;
+}
+
+.menu-mobile ul li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-mobile ul li:nth-child(1) i {
+  margin-right: 10px;
 }
 
 .header {
@@ -103,6 +180,10 @@
 .header .phone {
   margin-top: 25px;
   text-align: center;
+}
+
+.banner {
+  padding: 0px !important;
 }
 
 .menu {
@@ -222,6 +303,15 @@
   color: white;
 }
 
+.partner-mobile {
+  background-color: #3f3f3f;
+  text-align: center;
+}
+
+.partner-mobile h5 {
+  color: white;
+}
+
 .partner {
   background-color: #3f3f3f;
   text-align: center;
@@ -271,5 +361,19 @@
   height: 30px;
   padding: 0px;
   border-radius: 15px;
+}
+
+.comebacktop {
+  padding: 10px;
+  background-color: gray;
+  width: 110px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.7;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
