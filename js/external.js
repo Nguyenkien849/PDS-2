@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.comebacktop').click(function (e) { 
         e.preventDefault();
-        $('html').animate({ scrollTop: 0}, 1500, "");
+        $('html,body').animate({ scrollTop: 0}, 1500, "easeInOutSine");
     });
    
     
@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.nav-mobile').click(function() {
         $('.menu-mobile').animate({opacity: 0, marginLeft:-300});
         $('.menu-mobile').toggleClass('menu-mobile-1');
-        $('.menu-mobile-1').animate({opacity: 1, marginLeft:0}, 1000, "easeOutExpo");
+        $('.menu-mobile-1').animate({opacity: 1, marginLeft:0}, 800, "easeInOutSine");
     });
     
 
@@ -25,3 +25,8 @@ $(document).ready(function () {
         $('.search-box-1').animate({opacity: 1, marginTop:0}, 500);
     });
 });
+
+
+
+
+

@@ -58,6 +58,12 @@
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
+  .menu-mobile {
+    height: 280px;
+  }
+  .menu-mobile ul li {
+    padding: 6px;
+  }
   .desktop, .menu {
     display: none;
   }
@@ -145,6 +151,7 @@
 
 .menu-mobile ul li a {
   color: #e6e6e6;
+  text-decoration: none;
 }
 
 .menu-mobile ul li:nth-child(1) {
@@ -309,6 +316,8 @@
 }
 
 .partner-mobile h5 {
+  margin-bottom: 15px;
+  margin: auto;
   color: white;
 }
 
@@ -317,8 +326,11 @@
   text-align: center;
 }
 
-.partner h5 {
+.partner .partner-1 h5 {
+  margin: auto;
+  padding: 10px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -365,7 +377,8 @@
 
 .comebacktop {
   padding: 10px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.3);
+  color: #1d1810;
   width: 110px;
   border: 1px solid gray;
   border-radius: 25px;
@@ -375,5 +388,12 @@
   position: fixed;
   right: 0;
   bottom: 0;
+}
+
+.hotline {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
