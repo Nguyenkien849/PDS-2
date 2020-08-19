@@ -61,12 +61,15 @@
   .menu-mobile {
     height: 280px;
   }
+<<<<<<< HEAD
   .menu-mobile ul li {
     padding: 6px;
   }
   .desktop, .menu {
     display: none;
   }
+=======
+>>>>>>> development
 }
 
 @media screen and (min-width: 350px) and (max-width: 992px) {
@@ -151,7 +154,10 @@
 
 .menu-mobile ul li a {
   color: #e6e6e6;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+>>>>>>> development
 }
 
 .menu-mobile ul li:nth-child(1) {
@@ -316,8 +322,11 @@
 }
 
 .partner-mobile h5 {
+<<<<<<< HEAD
   margin-bottom: 15px;
   margin: auto;
+=======
+>>>>>>> development
   color: white;
 }
 
@@ -377,8 +386,12 @@
 
 .comebacktop {
   padding: 10px;
+<<<<<<< HEAD
   background-color: rgba(128, 128, 128, 0.3);
   color: #1d1810;
+=======
+  background-color: gray;
+>>>>>>> development
   width: 110px;
   border: 1px solid gray;
   border-radius: 25px;
@@ -389,6 +402,7 @@
   right: 0;
   bottom: 0;
 }
+<<<<<<< HEAD
 
 .hotline {
   position: fixed;
@@ -396,4 +410,6 @@
   bottom: 10px;
   z-index: 1;
 }
+=======
+>>>>>>> development
 /*# sourceMappingURL=style.css.map */
