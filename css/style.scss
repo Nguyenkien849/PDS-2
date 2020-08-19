@@ -63,7 +63,6 @@ $backgrondColor: #f7f8f9;
 
 }
 @media screen and (min-width: 250px) and (max-width: 480px) {
-<<<<<<< HEAD
     .menu-mobile {
         height: 280px;
         ul {
@@ -72,8 +71,6 @@ $backgrondColor: #f7f8f9;
             }
         }
     }
-=======
->>>>>>> development
     .desktop, .menu {
         display: none;
     }
@@ -147,10 +144,7 @@ $backgrondColor: #f7f8f9;
             list-style-type: none;
             a {
                 color: #e6e6e6;
-<<<<<<< HEAD
                 text-decoration: none;
-=======
->>>>>>> development
             }
         }
         li:nth-child(1) {
@@ -162,11 +156,8 @@ $backgrondColor: #f7f8f9;
         }
     }
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> development
 .header {
     margin-top: 50px;
     .brand {
@@ -295,16 +286,6 @@ $backgrondColor: #f7f8f9;
 }
 .partner-mobile {
     background-color: #3f3f3f ;
-<<<<<<< HEAD
-=======
-    text-align: center;
-    h5 {
-        color: white;
-    }
-}
-.partner {
-    background-color: #3f3f3f;
->>>>>>> development
     text-align: center;
     h5 {
         margin-bottom: 15px;
@@ -362,12 +343,8 @@ $backgrondColor: #f7f8f9;
 }
 .comebacktop {
     padding: 10px;
-<<<<<<< HEAD
     background-color: rgba($color: gray, $alpha: 0.3);
     color: rgb(29, 24, 16);
-=======
-    background-color: gray;
->>>>>>> development
     width: 110px;
     border: 1px solid gray;
     border-radius: 25px;
@@ -377,7 +354,6 @@ $backgrondColor: #f7f8f9;
     position: fixed;
     right: 0;
     bottom: 0;
-<<<<<<< HEAD
 }
 .hotline  {
     position: fixed;
@@ -389,6 +365,3 @@ $backgrondColor: #f7f8f9;
 
 
 
-=======
-}
->>>>>>> development
