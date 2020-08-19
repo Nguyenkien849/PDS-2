@@ -4,7 +4,11 @@ $(document).ready(function () {
 <<<<<<< HEAD
         $('html,body').animate({ scrollTop: 0}, 1500, "easeInOutSine");
 =======
+<<<<<<< HEAD
+        $('html,body').animate({ scrollTop: 0}, 1500, "easeInOutSine");
+=======
         $('html').animate({ scrollTop: 0}, 1500, "");
+>>>>>>> development
 >>>>>>> development
     });
    
@@ -20,7 +24,11 @@ $(document).ready(function () {
 <<<<<<< HEAD
         $('.menu-mobile-1').animate({opacity: 1, marginLeft:0}, 800, "easeInOutSine");
 =======
+<<<<<<< HEAD
+        $('.menu-mobile-1').animate({opacity: 1, marginLeft:0}, 800, "easeInOutSine");
+=======
         $('.menu-mobile-1').animate({opacity: 1, marginLeft:0}, 1000, "easeOutExpo");
+>>>>>>> development
 >>>>>>> development
     });
     
@@ -33,12 +41,18 @@ $(document).ready(function () {
         $('.search-box-1').animate({opacity: 1, marginTop:0}, 500);
     });
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> development
 });
 
 
 
 
 
+<<<<<<< HEAD
+=======
 =======
 });
+>>>>>>> development
 >>>>>>> development
