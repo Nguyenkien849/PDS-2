@@ -24,6 +24,10 @@ $(document).ready(function () {
         $('.search-box').toggleClass('search-box-1');
         $('.search-box-1').animate({opacity: 1, marginTop:0}, 500);
     });
+
+    $('.recieve').click(function() {
+        $('html,body').animate({scrollTop: $('.form').offset().top}, 1000);
+    });
 });
 
 
