@@ -273,11 +273,11 @@
             <div class="col-md-6">
                 <h3>Liên hệ báo giá</h3>
                 <form>
-						<input type="text" class="form-control" placeholder="Họ tên*" name="name"><br>
-						<input type="text" class="form-control" placeholder=" Email*" name="Email"><br>
-						<input type="text" class="form-control" placeholder="SĐT*" name="SĐT"><br>
+						<input type="text" class="form-control" placeholder="Họ tên*" minlength="6" maxlength="16" required name="name"><br>
+						<input type="email" class="form-control" placeholder=" Email*" required name="Email"><br>
+						<input type="number" class="form-control" placeholder="SĐT*" minlength="10" maxlength="11" required name="SĐT"><br>
 						<textarea class="form-control mb-3" rows="5" placeholder="Lời nhắn*"></textarea><br>
-						<button type="submit" class="btn btn-primary submit">Gửi</button>
+						<button type="submit" value="submit" class="btn btn-primary submit">Gửi</button>
 					</form>
 
             </div>
