@@ -1,7 +1,161 @@
 $backgrondColor: #f7f8f9;
+@mixin colorvsfontsize ($color, $fonSize) {
+    color: $color;
+    font-size: $fonSize ;
+}
+@media screen and (max-width: 578px) {
+    .partner-mobile {
+        display: block;
+    }
+    .partner {
+        display: none;
+    }
+}
+@media screen and (min-width: 578px) and (max-width: 1500px) {
+    .partner-mobile {
+        display: none;
+    }
+    .partner {
+        display: block;
+    }
+}
 
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+    .desktop {
+        display: block;
+    }
+}
+@media screen and (min-width: 768.1px) and (max-width:1500px) {
+    .mobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .product-mobile {
+        margin-left: 90px;
+    }
+    .new-mobile {
+        padding:0px !important;
+    }
+    .new-mobile-1 {
+        padding-right: 0px !important;
+        padding-left: 30px !important;
+        
+    }
+}
 
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .menu-mobile {
+        width: 420px !important;
+        height: 320px;
+        ul {
+            li {
+                padding: 10px;
+            }
+        }
+    }
+    .desktop {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
 
+}
+@media screen and (min-width: 250px) and (max-width: 480px) {
+    .menu-mobile {
+        height: 280px;
+        ul {
+            li {
+                padding: 6px;
+            }
+        }
+    }
+    .desktop, .menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 992px) {
+    .menu-2 {
+        .special-2 {
+            height: 50px !important;
+        }
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 768px)  {
+    .search-box {
+        display: none;
+    }
+    .news-mobile {
+        text-align: center;
+    }
+}
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    a {
+        i{
+            height: 110px;
+            line-height: 110px;
+            color: black;
+        }
+    }
+}
+.search-box {
+    background-color: #f39c12;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    input {
+        border: 3px solid #27ae60;
+        height: 50px;
+        width: 300px;
+        padding: 0px 10px;
+        border-radius: 25px;
+        outline: none;
+    }
+    .btn-search {
+        position: absolute;
+        right: 39%;
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 3px solid #d35400;
+        border-radius: 25px;
+        cursor: pointer;
+        i {
+            color: #d35400;
+        }
+    }
+}
+
+.menu-mobile {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 0;
+    background-color: #d35400;
+    ul {
+        padding-left: 20px;
+        margin: 8px 0px;
+        li{
+            list-style-type: none;
+            a {
+                color: #e6e6e6;
+                text-decoration: none;
+            }
+        }
+        li:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
 
 
 .header {
@@ -21,7 +175,9 @@ $backgrondColor: #f7f8f9;
        text-align: center;
    }
 }
-
+.banner {
+    padding: 0px !important;
+}
 .menu {
     background-color: $backgrondColor;
     margin-top: 20px;
@@ -32,6 +188,7 @@ $backgrondColor: #f7f8f9;
         &:hover {
             .sub-menu {
                 display: block;
+                text-align: left;
             }
         }
 
@@ -46,8 +203,10 @@ $backgrondColor: #f7f8f9;
                     height: 100px;
                     width: 200;
                     display: block;
+                    padding-left: 20px;
                 }
                 a {
+                    padding-left: 20px;
                     height: 50px;
                     line-height: 50px;
                     text-decoration: none;
@@ -75,16 +234,23 @@ $backgrondColor: #f7f8f9;
     .productt {
         text-align: center;
     }
+    .product-row-2 {
+        text-align: center;
+    }
+    .product-row-3 {
+        @extend .product-row-2;
+    }
 }
 .menu-2 {
     text-decoration: none;
     list-style-type:none;
+    padding-left: 0px;
 
     .special-1 {
         height: 50px;
         background-color: blue;
         text-align:center;
-        p {
+        a {
             text-transform: uppercase;
             color: white;
             font-weight: bold;
@@ -92,7 +258,6 @@ $backgrondColor: #f7f8f9;
     }
     .special-2 {
         height: 100px;
-        position: relative;
         a {
             color: red;
             display: block;
@@ -100,7 +265,6 @@ $backgrondColor: #f7f8f9;
             &:hover {
                 color: white;
                 background-color: blue;
-                position: absolute;
             }
         }
     }
@@ -120,12 +284,27 @@ $backgrondColor: #f7f8f9;
         }
     }
 }
+.partner-mobile {
+    background-color: #3f3f3f ;
+    text-align: center;
+    h5 {
+        margin-bottom: 15px;
+        margin: auto;
+        color: white;
+    }
+}
 .partner {
     background-color: #3f3f3f;
     text-align: center;
-    h5 {
-        color: white;
+    .partner-1 {
+        h5 {
+            margin: auto;
+            padding: 10px;
+            color: white;
+            margin-bottom: 10px;
+        }
     }
+    
 }
 .footer {
     border-top: 2px solid white;
@@ -141,12 +320,10 @@ $backgrondColor: #f7f8f9;
         }
     }
     .brandd {
-        img {
-            float: right;
-        }
+        margin-right: 10px;
     }
     .infor {
-        float: left;
+        margin-left: 10px;
         h6{
             color: white;
             width: 350px;;
@@ -164,3 +341,27 @@ $backgrondColor: #f7f8f9;
         border-radius: 15px;
     }
 }
+.comebacktop {
+    padding: 10px;
+    background-color: rgba($color: gray, $alpha: 0.3);
+    color: rgb(29, 24, 16);
+    width: 110px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.hotline  {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+
+
+
